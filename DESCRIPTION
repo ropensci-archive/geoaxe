@@ -1,0 +1,14 @@
+Package: geoaxe
+Title: split geospatial objects into pieces
+Description: split geospatial objects into pieces. Things and
+    stuff.
+Version: 0.0.1.9000
+License: MIT + file LICENSE
+Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
+		email = "myrmecocystus@gmail.com")
+URL: https://github.com/ropenscilabs/geoaxe
+BugReports: https://github.com/ropenscilabs/geoaxe/issues
+Imports:
+    rgeos,
+    raster
+RoxygenNote: 5.0.1
