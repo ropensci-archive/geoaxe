@@ -1,7 +1,15 @@
 geoaxe
 ======
 
-
+```{r echo=FALSE}
+knitr::opts_chunk$set(
+  comment = "#>",
+  collapse = TRUE,
+  warning = FALSE, 
+  message = FALSE,
+  fig.path = "inst/img/"
+)
+```
 
 [![Build Status](https://travis-ci.org/ropenscilabs/geoaxe.svg)](https://travis-ci.org/ropenscilabs/geoaxe)
 
@@ -9,20 +17,17 @@ geoaxe
 
 ## Install
 
-
-```r
+```{r eval=FALSE}
 devtools::install_github("ropenscilabs/geoaxe")
 ```
 
-
-```r
+```{r}
 library("geoaxe")
 ```
 
 ## SpatialPolygons
 
-
-```r
+```{r}
 library("rgeos")
 wkt <- "POLYGON((-180 -20, -140 55, 10 0, -140 -60, -180 -20))"
 poly <- readWKT(wkt)
@@ -30,8 +35,6 @@ polys <- chop(x = poly)
 plot(polys)
 plot(poly, add = TRUE, lwd = 6)
 ```
-
-![plot of chunk unnamed-chunk-4](inst/img/unnamed-chunk-4-1.png) 
 
 ## Meta
 
