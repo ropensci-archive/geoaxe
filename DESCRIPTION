@@ -2,7 +2,7 @@ Package: geoaxe
 Title: split geospatial objects into pieces
 Description: split geospatial objects into pieces. Things and
     stuff.
-Version: 0.0.1.9000
+Version: 0.0.1.9200
 License: MIT + file LICENSE
 Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
 		email = "myrmecocystus@gmail.com")
