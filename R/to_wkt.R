@@ -7,6 +7,13 @@ to_wkt <- function(x) {
 }
 
 #' @export
+to_wkt.axewkt <- function(x) x
+
+#' @export
 to_wkt.SpatialPolygons <- function(x) {
-  lapply(x@polygons, function(z) writeWKT(SpatialPolygons(list(z))))
+  towkt(lapply(x@polygons, function(z) writeWKT(SpatialPolygons(list(z)))))
+}
+
+towkt <- function(x) {
+  structure(x, class = "axewkt")
 }
