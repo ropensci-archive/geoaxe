@@ -1,6 +1,7 @@
 #' Split geospatial objects into pieces
 #'
-#' @import rgeos raster
+#' @importFrom rgeos gIntersection writeWKT
+#' @import sp
 #' @name geoaxe-package
 #' @aliases geoaxe
 #' @docType package

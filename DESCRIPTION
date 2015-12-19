@@ -9,6 +9,6 @@ Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
 URL: https://github.com/ropenscilabs/geoaxe
 BugReports: https://github.com/ropenscilabs/geoaxe/issues
 Imports:
-    rgeos,
-    raster
+    sp,
+    rgeos
 RoxygenNote: 5.0.1
