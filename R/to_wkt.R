@@ -11,7 +11,7 @@ to_wkt.axewkt <- function(x) x
 
 #' @export
 to_wkt.SpatialPolygons <- function(x) {
-  towkt(lapply(x@polygons, function(z) writeWKT(SpatialPolygons(list(z)))))
+  towkt(lapply(x@polygons, function(z) rgeos::writeWKT(sp::SpatialPolygons(list(z)))))
 }
 
 towkt <- function(x) {

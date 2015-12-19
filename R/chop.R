@@ -39,16 +39,16 @@ chop <- function(x, cellsize = 10, cells.dim = 20) {
 
 #' @export
 chop.SpatialPolygons <- function(x, cellsize = 10, cells.dim = 20) {
-  box <- bbox(x)
-  gt <- GridTopology(c(box[1,1], box[2,1]), rep(cellsize, 2), rep(cells.dim, 2))
-  gr <- as(as(SpatialGrid(gt), "SpatialPixels"), "SpatialPolygons")
+  box <- sp::bbox(x)
+  gt <- sp::GridTopology(c(box[1,1], box[2,1]), rep(cellsize, 2), rep(cells.dim, 2))
+  gr <- as(as(sp::SpatialGrid(gt), "SpatialPixels"), "SpatialPolygons")
   gIntersection(x, gr, byid = TRUE, drop_lower_td = TRUE)
 }
 
 #' @export
 chop.character <- function(x, cellsize = 10, cells.dim = 20) {
   switch(wkt_geojson(x),
-    wkt = chop(readWKT(x), cellsize = cellsize, cells.dim = cells.dim),
+    wkt = chop(rgeos::readWKT(x), cellsize = cellsize, cells.dim = cells.dim),
     geojson = {
       stop("not ready yet", call. = FALSE)
       # ff <- tempfile(fileext = ".geojson")
