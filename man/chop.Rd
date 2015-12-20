@@ -4,21 +4,23 @@
 \alias{chop}
 \title{Split polygon into many}
 \usage{
-chop(x, cellsize = 10, cells.dim = 20)
+chop(x, size = 10, n = 20)
 }
 \arguments{
 \item{x}{Spatial object}
 
-\item{cellsize}{size}
+\item{size}{size of each side of each cell, which makes a square cell}
 
-\item{cells.dim}{Dimension}
+\item{n}{number of cells to make in each dimension, same number used for
+each dimension}
 }
 \description{
 Split polygon into many
 }
 \details{
 Works on spatial classes of type \code{SpatialPolygons}, and on
-Well-Known Text character strings.
+Well-Known Text character strings. GeoJSON character strings and lists
+to come
 }
 \examples{
 library("rgeos")
@@ -35,6 +37,14 @@ plot(poly, add = TRUE, lwd = 6)
 
 # WKT character input
 chop(wkt)
+
+## example w/ more complex polygon
+ff <- system.file("examples", "us_eez_alaska.txt", package = "geoaxe")
+wkt <- readLines(ff)
+res <- chop(wkt, size = 2)
+ttt <- readWKT(wkt)
+plot(ttt, lwd = 2)
+plot(res, add = TRUE)
 
 # geojson character input
 # geojsonio::as.json(wellknown::wkt2geojson(wkt)$geometry)
