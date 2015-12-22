@@ -43,12 +43,11 @@ ff <- system.file("examples", "us_eez_alaska.txt", package = "geoaxe")
 wkt <- readLines(ff)
 res <- chop(wkt, size = 2)
 ttt <- readWKT(wkt)
-plot(ttt, lwd = 2)
-plot(res, add = TRUE)
+# plot(ttt, lwd = 2)
+# plot(res, add = TRUE)
 
 # geojson character input
 # geojsonio::as.json(wellknown::wkt2geojson(wkt)$geometry)
-x <- '{"type":"Polygon","coordinates":[[["-180.0","-20.0"],["-140.0","55.0"],["10.0","0.0"],["-140.0","-60.0"],["-180.0","-20.0"]]]}'
 # chop(x)
 
 # geojson list input

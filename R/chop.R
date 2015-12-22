@@ -29,12 +29,11 @@
 #' wkt <- readLines(ff)
 #' res <- chop(wkt, size = 2)
 #' ttt <- readWKT(wkt)
-#' plot(ttt, lwd = 2)
-#' plot(res, add = TRUE)
+#' # plot(ttt, lwd = 2)
+#' # plot(res, add = TRUE)
 #'
 #' # geojson character input
 #' # geojsonio::as.json(wellknown::wkt2geojson(wkt)$geometry)
-#' x <- '{"type":"Polygon","coordinates":[[["-180.0","-20.0"],["-140.0","55.0"],["10.0","0.0"],["-140.0","-60.0"],["-180.0","-20.0"]]]}'
 #' # chop(x)
 #'
 #' # geojson list input
@@ -58,7 +57,7 @@ chop.SpatialPolygons <- function(x, size = 10, n = 20) {
 #' @export
 chop.character <- function(x, size = 10, n = 20) {
   switch(wkt_geojson(x),
-    wkt = chop(rgeos::readWKT(x), cellsize = size, cells.dim = n),
+    wkt = chop(rgeos::readWKT(x), size = size, n = n),
     geojson = {
       stop("not ready yet", call. = FALSE)
       # ff <- tempfile(fileext = ".geojson")
