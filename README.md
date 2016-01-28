@@ -108,3 +108,4 @@ plot(chop(wkt, size = 200))
 
 * Please [report any issues or bugs](https://github.com/ropenscilabs/geoaxe/issues).
 * License: MIT
+* Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
