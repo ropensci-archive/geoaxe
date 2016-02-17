@@ -34,6 +34,12 @@ to_wkt(polys)[[2]]
 plot(polys)
 plot(poly, add = TRUE, lwd = 6)
 
+# SpatialPolygonsDataFrame input
+class(poly)
+polydf <- as(poly, "SpatialPolygonsDataFrame")
+class(polydf)
+chop(polydf)
+
 # WKT character input
 chop(wkt)
 

@@ -20,6 +20,12 @@
 #' plot(polys)
 #' plot(poly, add = TRUE, lwd = 6)
 #'
+#' # SpatialPolygonsDataFrame input
+#' class(poly)
+#' polydf <- as(poly, "SpatialPolygonsDataFrame")
+#' class(polydf)
+#' chop(polydf)
+#'
 #' # WKT character input
 #' chop(wkt)
 #'
@@ -49,6 +55,11 @@ chop.SpatialPolygons <- function(x, size = 10, n = 20) {
   gt <- sp::GridTopology(c(box[1,1], box[2,1]), rep(size, 2), rep(n, 2))
   gr <- as(as(sp::SpatialGrid(gt), "SpatialPixels"), "SpatialPolygons")
   rgeos::gIntersection(x, gr, byid = TRUE, drop_lower_td = TRUE)
+}
+
+#' @export
+chop.SpatialPolygonsDataFrame <- function(x, size = 10, n = 20) {
+  chop(as(x, "SpatialPolygons"))
 }
 
 #' @export

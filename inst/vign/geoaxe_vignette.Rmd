@@ -1,49 +1,61 @@
-geoaxe
-======
+<!--
+%\VignetteEngine{knitr::knitr}
+%\VignetteIndexEntry{geoaxe introduction}
+%\VignetteEncoding{UTF-8}
+-->
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(
-  comment = "#>",
-  collapse = TRUE,
-  warning = FALSE, 
-  message = FALSE,
-  fig.path = "inst/img/",
-  fig.width = 5,
-  fig.height = 4
+	comment = "#>",
+	collapse = TRUE,
+	warning = FALSE,
+	message = FALSE,
+	fig.path = "img/"
 )
-
-knitr::opts_knit$set(global.device = TRUE)
 ```
 
-[![Build Status](https://travis-ci.org/ropenscilabs/geoaxe.svg)](https://travis-ci.org/ropenscilabs/geoaxe)
+geoaxe introduction
+======
 
-`geoaxe` - split geospatial objects into pieces
+`geoaxe` helps you split geospatial objects into pieces. It includes support for 
+spatial object inputs (e.g., `SpatialPolygons`), Well-Known Text (WKT), and GeoJSON 
+(character and list).
 
-## Install
+__But, Why?__
 
-Stable CRAN version
+The use case we have at rOpenSci is that often web APIs accept WKT, but the WKT string
+can only be so long. If the string is longer than allowed by a web API, then one option
+is to split up the WKT string into many, and do a request on each one of those.
+
+Surely there are other use cases for splitting up geospatial objects :)
+
+## Installation
+
+Install from CRAN
 
 ```{r eval=FALSE}
 install.packages("geoaxe")
 ```
 
-Development version
+Or install the development version from GitHub
 
 ```{r eval=FALSE}
 devtools::install_github("ropenscilabs/geoaxe")
 ```
 
+Load `geoaxe` (as well as `sp` and `rgeos`)
+
 ```{r}
 library("geoaxe")
 library("sp")
+library("rgeos")
 ```
 
 ## Spatial Polygons and friends input
 
-Works for only `SpatialPolygons` for now, but aim to include related classes soon.
+Works for `SpatialPolygons` and `SpatialPolygonsDataFrame` for now, may include other classes later
 
 ```{r}
-library("rgeos")
 wkt <- "POLYGON((-180 -20, -140 55, 10 0, -140 -60, -180 -20))"
 poly <- rgeos::readWKT(wkt)
 polys <- chop(x = poly)
@@ -113,9 +125,3 @@ plot(chop(wkt, size = 200))
 ```{r echo=FALSE, include=FALSE}
 dev.off()
 ```
-
-## Meta
-
-* Please [report any issues or bugs](https://github.com/ropenscilabs/geoaxe/issues).
-* License: MIT
-* Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
