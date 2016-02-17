@@ -18,9 +18,8 @@ each dimension}
 Split polygon into many
 }
 \details{
-Works on spatial classes of type \code{SpatialPolygons}, and on
-Well-Known Text character strings. GeoJSON character strings and lists
-to come
+Works on spatial classes of type \code{SpatialPolygons},
+Well-Known Text character strings, and GeoJSON character strings and lists
 }
 \examples{
 library("rgeos")
@@ -47,14 +46,12 @@ ttt <- readWKT(wkt)
 # plot(res, add = TRUE)
 
 # geojson character input
-# geojsonio::as.json(wellknown::wkt2geojson(wkt)$geometry)
-# chop(x)
+file <- system.file("examples", "sample1.geojson", package = "geoaxe")
+x <- readLines(file)
+chop(x)
 
-# geojson list input
-# chop(wkt)
-
-## ignore
-# geojsonio::geojson_json(poly) \%>\% geojsonio::map_leaf()
-# geojsonio::geojson_json(polys) \%>\% geojsonio::map_leaf()
+# geojson json input
+x <- structure(x, class = "json")
+chop(x)
 }
 

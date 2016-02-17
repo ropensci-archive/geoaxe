@@ -3,7 +3,7 @@ Title: Split Geospatial Objects Into Pieces
 Description: Split geospatial objects into pieces. Includes
     support for spatial objects inputs, Well-Known Text, and
     GeoJSON (character and list).
-Version: 0.0.1.9210
+Version: 0.0.2.9000
 License: MIT + file LICENSE
 Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
 		email = "myrmecocystus@gmail.com")
@@ -11,5 +11,8 @@ URL: https://github.com/ropenscilabs/geoaxe
 BugReports: https://github.com/ropenscilabs/geoaxe/issues
 Imports:
     sp,
-    rgeos
+    rgeos,
+    jsonlite
+Suggests:
+    testthat
 RoxygenNote: 5.0.1
