@@ -1,5 +1,15 @@
 language: r
 sudo: required
+
+r_github_packages:
+ - jimhester/covr
+
+after_success:
+  - Rscript -e 'covr::codecov()'
+
 notifications:
+  email:
+    on_success: change
+    on_failure: change
   slack:
     secure: ylonm79spZqb4aASGmYAVl9pjA95mq37SYzWd4cOSlab2Y1AKamaypUoxx2wduCYXZ2a3IlolmV//ufoUxh//hrr7Fh45CcCVePHwKVi4L75FdPuKN6yRXpdp/P9lajR4zEgsH2hEFMru08KNgd6c7pOeenv+hh7tOZZw89hRmq9hNn3MDVT/i48g1tKqZxDVAu2gxH5Hd+NnMUXNpr5k5lhc3CfxR7ylp7g7uZq+iQfvgwec1nu20IUGd5BWPqlBGTQPSKGBxKvfDEV5C5x7jFyUKuUDPN72sHzC8ruXEEe+Tqgho8L5BtK66UzgWT5IyvdEj2zm8FeGGzGc6li/c3/iQVul7F0UPDeo/uAlrCGmQl/GxiiYHyFMoBlH3AMK2G6WJN62oEYBRN3kgr60R70owOD9IIiNPWLBc77rdQMI5YRuh2xV9NUEtN94QwPBeH90GW430jo9KnpOJZS9jKjFshyOjuAhkNR5K7w3lEPbae9XwJqMIXC+HzlVS16YIoD21G0OHgl52vdxLHNdOLSoYo0hQiYZ0f891WzM4AEwMZiE+El/O+vFTDONmi2JdsumE1s6flM2k8qT68ivIcZSK2ZKHZu6iASa8EYaSRnnEMXqGvZWqYOzzH+i9bp780yceIcxu65v1VUb/ImAbvR5hK9Ccj8l5howJLG5is=
