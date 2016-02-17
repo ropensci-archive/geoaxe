@@ -2,6 +2,7 @@
 #'
 #' @importFrom rgeos gIntersection writeWKT readWKT
 #' @importFrom jsonlite fromJSON
+#' @importFrom methods as
 #' @import sp
 #' @name geoaxe-package
 #' @aliases geoaxe
