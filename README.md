@@ -5,7 +5,7 @@ geoaxe
 
 [![Build Status](https://travis-ci.org/ropenscilabs/geoaxe.svg)](https://travis-ci.org/ropenscilabs/geoaxe)
 [![Build status](https://ci.appveyor.com/api/projects/status/48we73qe8ucf8tst?svg=true)](https://ci.appveyor.com/project/sckott/geoaxe)
-[![codecov.io](https://codecov.io/github/ropensci/geoaxe/coverage.svg?branch=master)](https://codecov.io/github/ropensci/geoaxe?branch=master)
+[![codecov.io](https://codecov.io/github/ropenscilabs/geoaxe/coverage.svg?branch=master)](https://codecov.io/github/ropenscilabs/geoaxe?branch=master)
 [![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/geoaxe)](https://github.com/metacran/cranlogs.app)
 
 `geoaxe` - split geospatial objects into pieces
