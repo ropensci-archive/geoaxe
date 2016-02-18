@@ -71,8 +71,9 @@ Add chopped up polygon bits
 
 ```r
 plot(polys, add = TRUE)
-#> Error in polypath(x = mcrds[, 1], y = mcrds[, 2], border = border, col = col, : plot.new has not been called yet
 ```
+
+![plot of chunk unnamed-chunk-7](img/unnamed-chunk-7-1.png)
 
 
 

@@ -29,14 +29,6 @@
 #' # WKT character input
 #' chop(wkt)
 #'
-#' ## example w/ more complex polygon
-#' ff <- system.file("examples", "us_eez_alaska.txt", package = "geoaxe")
-#' wkt <- readLines(ff)
-#' res <- chop(wkt, size = 2)
-#' ttt <- readWKT(wkt)
-#' # plot(ttt, lwd = 2)
-#' # plot(res, add = TRUE)
-#'
 #' # geojson character input
 #' file <- system.file("examples", "sample1.geojson", package = "geoaxe")
 #' x <- readLines(file)

@@ -12,6 +12,8 @@ knitr::opts_chunk$set(
 	message = FALSE,
 	fig.path = "img/"
 )
+
+knitr::opts_knit$set(global.device = TRUE)
 ```
 
 geoaxe introduction
