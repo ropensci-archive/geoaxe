@@ -5,3 +5,4 @@
 ^CONDUCT\.md$
 Makefile
 ^appveyor\.yml$
+cran-comments.md
