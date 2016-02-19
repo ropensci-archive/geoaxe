@@ -19,6 +19,7 @@ knitr::opts_knit$set(global.device = TRUE)
 [![Build status](https://ci.appveyor.com/api/projects/status/48we73qe8ucf8tst?svg=true)](https://ci.appveyor.com/project/sckott/geoaxe)
 [![codecov.io](https://codecov.io/github/ropenscilabs/geoaxe/coverage.svg?branch=master)](https://codecov.io/github/ropenscilabs/geoaxe?branch=master)
 [![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/geoaxe)](https://github.com/metacran/cranlogs.app)
+[![cran version](http://www.r-pkg.org/badges/version/geoaxe)](http://cran.rstudio.com/web/packages/geoaxe)
 
 `geoaxe` - split geospatial objects into pieces
 
