@@ -4,10 +4,14 @@
 \alias{to_wkt}
 \title{To WKT}
 \usage{
-to_wkt(x)
+to_wkt(x, recursive = FALSE)
 }
 \arguments{
-\item{x}{Input}
+\item{x}{An object of class \code{axewkt} or \code{SpatialPolygons}}
+
+\item{recursive}{(logical) Whether to recursively drill down and split
+all polygons that would result in \code{MULTIPOLYGON} into single \code{POLYGON}
+objects}
 }
 \description{
 To WKT
@@ -19,5 +23,8 @@ poly <- readWKT(wkt)
 polys <- chop(x = poly)
 to_wkt(polys)
 to_wkt(polys)[[2]]
+
+to_wkt(polys, recursive = FALSE)
+to_wkt(polys, recursive = TRUE)
 }
 

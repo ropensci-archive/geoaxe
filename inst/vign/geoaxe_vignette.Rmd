@@ -17,7 +17,7 @@ knitr::opts_knit$set(global.device = TRUE)
 ```
 
 geoaxe introduction
-======
+===================
 
 `geoaxe` helps you split geospatial objects into pieces. It includes support for 
 spatial object inputs (e.g., `SpatialPolygons`), Well-Known Text (WKT), and GeoJSON 
