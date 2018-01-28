@@ -6,3 +6,4 @@
 Makefile
 ^appveyor\.yml$
 cran-comments.md
+^codemeta\.json$
