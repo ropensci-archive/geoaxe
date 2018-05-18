@@ -7,8 +7,8 @@ Version: 0.1.1.9000
 License: MIT + file LICENSE
 Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
 		email = "myrmecocystus@gmail.com")
-URL: https://github.com/ropenscilabs/geoaxe
-BugReports: https://github.com/ropenscilabs/geoaxe/issues
+URL: https://github.com/ropensci/geoaxe
+BugReports: https://github.com/ropensci/geoaxe/issues
 VignetteBuilder: knitr
 Imports:
     methods,

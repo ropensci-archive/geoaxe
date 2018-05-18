@@ -2,10 +2,10 @@ geoaxe
 ======
 
 
-
-[![Build Status](https://travis-ci.org/ropenscilabs/geoaxe.svg)](https://travis-ci.org/ropenscilabs/geoaxe)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+[![Build Status](https://travis-ci.org/ropensci/geoaxe.svg)](https://travis-ci.org/ropensci/geoaxe)
 [![Build status](https://ci.appveyor.com/api/projects/status/48we73qe8ucf8tst?svg=true)](https://ci.appveyor.com/project/sckott/geoaxe)
-[![codecov.io](https://codecov.io/github/ropenscilabs/geoaxe/coverage.svg?branch=master)](https://codecov.io/github/ropenscilabs/geoaxe?branch=master)
+[![codecov.io](https://codecov.io/github/ropensci/geoaxe/coverage.svg?branch=master)](https://codecov.io/github/ropensci/geoaxe?branch=master)
 [![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/geoaxe)](https://github.com/metacran/cranlogs.app)
 [![cran version](http://www.r-pkg.org/badges/version/geoaxe)](http://cran.rstudio.com/web/packages/geoaxe)
 
@@ -15,7 +15,7 @@ geoaxe
 
 
 ```r
-devtools::install_github("ropenscilabs/geoaxe")
+devtools::install_github("ropensci/geoaxe")
 ```
 
 
@@ -110,6 +110,6 @@ plot(chop(wkt, size = 200))
 
 ## Meta
 
-* Please [report any issues or bugs](https://github.com/ropenscilabs/geoaxe/issues).
+* Please [report any issues or bugs](https://github.com/ropensci/geoaxe/issues).
 * License: MIT
 * Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.

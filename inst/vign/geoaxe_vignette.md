@@ -34,7 +34,7 @@ Or install the development version from GitHub
 
 
 ```r
-devtools::install_github("ropenscilabs/geoaxe")
+devtools::install_github("ropensci/geoaxe")
 ```
 
 Load `geoaxe` (as well as `sp` and `rgeos`)
