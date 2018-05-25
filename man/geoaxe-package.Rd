@@ -2,11 +2,10 @@
 % Please edit documentation in R/geoaxe-package.R
 \docType{package}
 \name{geoaxe-package}
-\alias{geoaxe}
 \alias{geoaxe-package}
+\alias{geoaxe}
 \title{Split geospatial objects into pieces}
 \description{
 Split geospatial objects into pieces
 }
 \keyword{package}
-

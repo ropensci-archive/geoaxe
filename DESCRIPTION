@@ -3,7 +3,7 @@ Title: Split 'Geospatial' Objects into Pieces
 Description: Split 'geospatial' objects into pieces. Includes
     support for some spatial object inputs, 'Well-Known Text', and
     'GeoJSON'.
-Version: 0.1.1.9000
+Version: 0.1.1.9001
 License: MIT + file LICENSE
 Authors@R: person("Scott", "Chamberlain", role = c("aut", "cre"),
 		email = "myrmecocystus@gmail.com")
@@ -18,4 +18,4 @@ Imports:
 Suggests:
     testthat,
     knitr
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1

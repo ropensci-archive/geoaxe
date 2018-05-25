@@ -52,4 +52,3 @@ chop(x)
 x <- structure(x, class = "json")
 chop(x)
 }
-

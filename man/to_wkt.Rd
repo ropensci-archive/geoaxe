@@ -27,4 +27,3 @@ to_wkt(polys)[[2]]
 to_wkt(polys, recursive = FALSE)
 to_wkt(polys, recursive = TRUE)
 }
-
