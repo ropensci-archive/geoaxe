@@ -1,7 +1,7 @@
 geoaxe
 ======
 
-
+[![cran checks](https://cranchecks.info/badges/worst/geoaxe)](https://cranchecks.info/pkgs/geoaxe)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![Build Status](https://travis-ci.org/ropensci/geoaxe.svg)](https://travis-ci.org/ropensci/geoaxe)
 [![Build status](https://ci.appveyor.com/api/projects/status/48we73qe8ucf8tst?svg=true)](https://ci.appveyor.com/project/sckott/geoaxe)
