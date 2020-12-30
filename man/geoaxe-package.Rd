@@ -4,5 +4,8 @@
 \name{geoaxe-package}
 \alias{geoaxe-package}
 \alias{geoaxe}
-\title{Split geospatial objects into pieces}
+\title{geoaxe}
+\description{
+Split geospatial objects into pieces
+}
 \keyword{package}

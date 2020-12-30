@@ -1,5 +1,5 @@
-#' Split geospatial objects into pieces
-#'
+#' @title geoaxe
+#' @description Split geospatial objects into pieces
 #' @importFrom rgeos gIntersection writeWKT readWKT
 #' @importFrom jsonlite fromJSON
 #' @importFrom methods as
