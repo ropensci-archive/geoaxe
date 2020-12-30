@@ -53,7 +53,7 @@ Plot original polygon
 plot(poly, lwd = 6)
 ```
 
-![plot of chunk unnamed-chunk-6](inst/img/unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-6](../man/figures/unnamed-chunk-6-1.png)
 
 Add chopped up polygon bits
 
@@ -62,7 +62,7 @@ Add chopped up polygon bits
 plot(polys, add = TRUE)
 ```
 
-![plot of chunk unnamed-chunk-7](inst/img/unnamed-chunk-7-1.png)
+![plot of chunk unnamed-chunk-7](../man/figures/unnamed-chunk-7-1.png)
 
 
 
@@ -74,7 +74,7 @@ wkt <- "POLYGON((-180 -20, -140 55, 10 0, -140 -60, -180 -20))"
 plot(chop(wkt))
 ```
 
-![plot of chunk unnamed-chunk-9](inst/img/unnamed-chunk-9-1.png)
+![plot of chunk unnamed-chunk-9](../man/figures/unnamed-chunk-9-1.png)
 
 
 
@@ -92,7 +92,7 @@ plot(chop(wkt, n = 20))
 plot(chop(wkt, n = 50))
 ```
 
-![plot of chunk unnamed-chunk-11](inst/img/unnamed-chunk-11-1.png)
+![plot of chunk unnamed-chunk-11](../man/figures/unnamed-chunk-11-1.png)
 
 
 
@@ -114,7 +114,7 @@ plot(chop(wkt, size = 100))
 plot(chop(wkt, size = 200))
 ```
 
-![plot of chunk unnamed-chunk-13](inst/img/unnamed-chunk-13-1.png)
+![plot of chunk unnamed-chunk-13](../man/figures/unnamed-chunk-13-1.png)
 
 
 
