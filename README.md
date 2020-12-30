@@ -1,21 +1,32 @@
 geoaxe
 ======
 
+
+
 [![cran checks](https://cranchecks.info/badges/worst/geoaxe)](https://cranchecks.info/pkgs/geoaxe)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 [![Build Status](https://travis-ci.org/ropensci/geoaxe.svg)](https://travis-ci.org/ropensci/geoaxe)
 [![Build status](https://ci.appveyor.com/api/projects/status/48we73qe8ucf8tst?svg=true)](https://ci.appveyor.com/project/sckott/geoaxe)
 [![codecov.io](https://codecov.io/github/ropensci/geoaxe/coverage.svg?branch=master)](https://codecov.io/github/ropensci/geoaxe?branch=master)
-[![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/geoaxe)](https://github.com/metacran/cranlogs.app)
+[![rstudio mirror downloads](http://cranlogs.r-pkg.org/badges/geoaxe)](https://github.com/r-hub/cranlogs.app)
 [![cran version](http://www.r-pkg.org/badges/version/geoaxe)](http://cran.rstudio.com/web/packages/geoaxe)
 
 `geoaxe` - split geospatial objects into pieces
 
 ## Install
 
+Stable CRAN version
+
 
 ```r
-devtools::install_github("ropensci/geoaxe")
+install.packages("geoaxe")
+```
+
+Development version
+
+
+```r
+pak::pkg_install("ropensci/geoaxe")
 ```
 
 
@@ -43,7 +54,7 @@ Plot original polygon
 plot(poly, lwd = 6)
 ```
 
-![plot of chunk unnamed-chunk-5](inst/img/unnamed-chunk-5-1.png)
+![plot of chunk unnamed-chunk-6](inst/img/unnamed-chunk-6-1.png)
 
 Add chopped up polygon bits
 
@@ -52,7 +63,7 @@ Add chopped up polygon bits
 plot(polys, add = TRUE)
 ```
 
-![plot of chunk unnamed-chunk-6](inst/img/unnamed-chunk-6-1.png)
+![plot of chunk unnamed-chunk-7](inst/img/unnamed-chunk-7-1.png)
 
 
 
@@ -64,7 +75,7 @@ wkt <- "POLYGON((-180 -20, -140 55, 10 0, -140 -60, -180 -20))"
 plot(chop(wkt))
 ```
 
-![plot of chunk unnamed-chunk-8](inst/img/unnamed-chunk-8-1.png)
+![plot of chunk unnamed-chunk-9](inst/img/unnamed-chunk-9-1.png)
 
 
 
@@ -82,7 +93,7 @@ plot(chop(wkt, n = 20))
 plot(chop(wkt, n = 50))
 ```
 
-![plot of chunk unnamed-chunk-10](inst/img/unnamed-chunk-10-1.png)
+![plot of chunk unnamed-chunk-11](inst/img/unnamed-chunk-11-1.png)
 
 
 
@@ -104,7 +115,7 @@ plot(chop(wkt, size = 100))
 plot(chop(wkt, size = 200))
 ```
 
-![plot of chunk unnamed-chunk-12](inst/img/unnamed-chunk-12-1.png)
+![plot of chunk unnamed-chunk-13](inst/img/unnamed-chunk-13-1.png)
 
 
 
@@ -112,4 +123,4 @@ plot(chop(wkt, size = 200))
 
 * Please [report any issues or bugs](https://github.com/ropensci/geoaxe/issues).
 * License: MIT
-* Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
+* Please note that this package is released with a [Contributor Code of Conduct](https://ropensci.org/code-of-conduct/). By contributing to this project, you agree to abide by its terms.
