@@ -1,6 +1,7 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^README.Rmd$
+^README.md$
 ^\.travis.yml$
 ^CONDUCT\.md$
 Makefile
@@ -8,3 +9,4 @@ Makefile
 cran-comments.md
 ^codemeta\.json$
 ^LICENSE\.md$
+vignettes/
